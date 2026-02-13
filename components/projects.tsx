@@ -106,18 +106,18 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
       style={{ transitionDelay: `${index * 80}ms` }}
     >
       {/* Project Header - gradient area */}
-      <div className="relative h-44 bg-gradient-to-br from-primary/8 via-primary/3 to-transparent flex items-center justify-center border-b border-border/50 overflow-hidden">
+      <div className="relative h-44 bg-gradient-to-br from-primary via-primary/80 to-primary/60 flex items-center justify-center border-b border-border/40 overflow-hidden text-primary-foreground">
         {/* Decorative elements */}
         <div className="absolute top-4 right-4 w-20 h-20 rounded-full border border-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
         <div className="absolute bottom-4 left-4 w-12 h-12 rounded-lg border border-primary/10 rotate-12 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-        <h3 className="text-xl font-bold text-foreground px-6 text-center relative z-10">
+        <h3 className="text-xl font-bold text-white px-6 text-center relative z-10">
           {project.title}
         </h3>
       </div>
 
       {/* Project Body */}
       <div className="p-6">
-        <p className="text-sm text-muted-foreground leading-relaxed mb-5 line-clamp-3">
+        <p className="text-sm text-foreground/80 leading-relaxed mb-5 line-clamp-3">
           {project.description}
         </p>
 
@@ -126,7 +126,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
           {project.tags.map((tag) => (
             <span
               key={tag}
-              className="text-[11px] px-2.5 py-1 rounded-lg bg-primary/8 text-primary font-medium border border-primary/10"
+            className="text-[11px] px-2.5 py-1 rounded-lg bg-primary/15 text-primary font-medium border border-primary/20"
             >
               {tag}
             </span>
