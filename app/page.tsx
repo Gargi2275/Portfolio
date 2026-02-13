@@ -19,7 +19,6 @@ export default function Page() {
     <main className="overflow-x-hidden">
       <Navbar />
       <Hero />
-      <SectionDivider />
       <About />
       <SectionDivider />
       <Projects />
