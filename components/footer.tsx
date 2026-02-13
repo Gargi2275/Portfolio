@@ -28,7 +28,7 @@ export function Footer() {
               <div className="absolute inset-0 rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-colors duration-300" />
               <div className="absolute inset-[3px] rounded-md border-2 border-primary/60 group-hover:border-primary transition-colors duration-300" />
               <span className="relative text-sm font-bold text-primary font-mono tracking-tight">
-                RB
+                GV
               </span>
             </div>
             <span className="text-sm font-semibold text-foreground tracking-tight">
