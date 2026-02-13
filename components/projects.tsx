@@ -222,7 +222,7 @@ export function Projects() {
         {/* View More */}
         <div className="text-center mt-14">
           <a
-            href="https://github.com/riyabhatt2002"
+            href="https://github.com/Gargi2275"
             target="_blank"
             rel="noopener noreferrer"
             className="group inline-flex items-center gap-2.5 border border-border bg-card/50 backdrop-blur-sm text-foreground px-8 py-3.5 rounded-xl font-semibold text-sm transition-all duration-300 hover:border-primary/50 hover:shadow-lg hover:shadow-primary/5 hover:-translate-y-0.5"
