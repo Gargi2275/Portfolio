@@ -125,7 +125,7 @@ useEffect(() => {
         {/* Social Links */}
         <div className="flex items-center justify-center gap-3">
           {[
-            { icon: Github, href: "https://github.com/riyabhatt2002", label: "GitHub" },
+            { icon: Github, href: "https://github.com/Gargi2275", label: "GitHub" },
             { icon: Linkedin, href: "#", label: "LinkedIn" },
             { icon: Twitter, href: "#", label: "Twitter" },
           ].map((social) => (
