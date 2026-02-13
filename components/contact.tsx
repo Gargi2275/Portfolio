@@ -56,7 +56,7 @@ export function Contact() {
   }
 
   return (
-    <section id="contact" className="parallax-section relative py-28 px-6">
+    <section id="contact" className="parallax-section relative pt-28 pb-12 px-6">
       {/* Background effects */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         <div className="glow-orb glow-orb-primary w-[450px] h-[450px] top-0 left-1/3 animate-pulse-glow" />
