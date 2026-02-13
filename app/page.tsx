@@ -22,7 +22,6 @@ export default function Page() {
       <About />
       <SectionDivider />
       <Projects />
-      <SectionDivider />
       <Skills />
       <SectionDivider />
       <Contact />
