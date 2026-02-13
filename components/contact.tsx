@@ -17,7 +17,7 @@ const contactInfo = [
   {
     icon: Mail,
     title: "Email",
-    value: "bhattriya670@gmail.com",
+    value: "vanjaragargi@gmail.com",
     href: "mailto:bhattriya670@gmail.com",
   },
   {
@@ -118,7 +118,7 @@ export function Contact() {
             ))}
 
             {/* Social Follow */}
-            <div className="glass-card rounded-2xl p-5">
+            {/* <div className="glass-card rounded-2xl p-5">
               <h3 className="font-semibold text-foreground text-sm mb-4">
                 Follow Me
               </h3>
@@ -136,7 +136,7 @@ export function Contact() {
                   </a>
                 ))}
               </div>
-            </div>
+            </div> */}
           </div>
 
           {/* Contact Form */}
