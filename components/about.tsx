@@ -27,7 +27,7 @@ const services = [
 const journey = [
   {
     icon: Rocket,
-    title: "Frontend and Backend Development",
+    title: "Frontend and Backend Developmentssssssssss",
     description:
       "Working on creating complete web solutions from UI design to server implementation.",
   },
