@@ -6,7 +6,7 @@ import { useFadeUp, useMouseGlow } from "@/hooks/use-parallax"
 const services = [
   {
     icon: Code2,
-    title: "Frontend Development",
+    title: "Front--end Development",
     description:
       "Creating responsive and interactive user interfaces with modern frameworks and libraries.",
   },
