@@ -40,7 +40,7 @@ export default function EyeCursorDemo() {
 
        <div className="rounded-2xl overflow-hidden border border-border shadow-2xl bg-black aspect-video">
   <iframe
-    src="https://drive.google.com/file/d/18cafOI_BKdvfV20spuPD3xcOW-BpxB4X/preview"
+    src="https://drive.google.com/file/d/1jc_k5td8yiyYNDiLu0LuuCAhkDrA75aC/view?usp=sharing"
     className="w-full h-full"
     allow="autoplay"
   />
