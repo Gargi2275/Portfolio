@@ -168,8 +168,17 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
   Code
 </a>
 
-<Link
-  href={`/projects/${project.slug}`}
+{project.demo && (
+  <a
+    href={project.demo}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-primary transition-colors duration-300"
+  >
+    <ExternalLink className="h-4 w-4" />
+    Demo
+  </a>
+)}
   className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-primary transition-colors duration-300"
 >
   <ExternalLink className="h-4 w-4" />
