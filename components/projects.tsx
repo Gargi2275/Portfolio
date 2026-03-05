@@ -35,6 +35,7 @@ const projects: Project[] = [
     category: "Full Stack",
 
     github: "https://github.com/Gargi2275/Flux",
+    demo:"https://drive.google.com/file/d/18cafOI_BKdvfV20spuPD3xcOW-BpxB4X/view?usp=sharing"
   },
   {
     title: "Text To Speech Convertor",
