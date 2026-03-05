@@ -32,13 +32,14 @@ export default function TextToSpeechDemo() {
         </div>
 
         {/* Demo Video Section */}
-        <div className="rounded-2xl overflow-hidden border border-border shadow-2xl bg-black">
-          <video
-            src="/projects/text-to-speech/demo.mp4"   // 👉 Put your video here
-            controls
-            className="w-full h-auto"
-          />
-        </div>
+       {/* Demo Video Section */}
+<div className="rounded-2xl overflow-hidden border border-border shadow-2xl bg-black aspect-video">
+  <iframe
+    src="https://drive.google.com/file/d/18cafOI_BKdvfV20spuPD3xcOW-BpxB4X/preview"
+    className="w-full h-full"
+    allow="autoplay"
+  />
+</div>
 
         {/* Features Section */}
         <div className="mt-16 grid md:grid-cols-3 gap-6 text-muted-foreground">
