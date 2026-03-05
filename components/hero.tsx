@@ -156,10 +156,11 @@ export function Hero() {
   <span className="hidden sm:block w-px h-4 bg-border" />
 
 <a 
-   href="https://drive.google.com/file/d/1WW8OoTzcNP7qJ8QveNcaMWXF5CW748zj/view?usp=sharing" 
-   target="_blank" rel="noopener noreferrer" 
-   className="group inline-flex items-center gap-2 text-foreground font-medium transition-all duration-300 hover:text-primary hover:gap-3" > 
-   <PlayCircle className="h-4 w-4 transition-transform group-hover:scale-110" /> Watch Video Resume </a>
+   href="https://drive.google.com/file/d/1WW8OoTzcNP7qJ8QveNcaMWXF5CW748zj/preview"
+   target="_blank"
+   rel="noopener noreferrer"
+   className="group inline-flex items-center gap-2 text-foreground font-medium transition-all duration-300 hover:text-primary hover:gap-3"
+> Watch Video Resume </a>
 </div>
         {/* Social Links */}
         <div className="flex items-center justify-center gap-5">
