@@ -292,7 +292,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
 {/* Demo Link */}
 {project.slug && (
   <Link
-    href={`/${project.slug}`}
+    href={`/projects/${project.slug}`}
     className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-primary transition-colors duration-300"
   >
     <ExternalLink className="h-4 w-4" />
