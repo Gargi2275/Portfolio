@@ -35,7 +35,7 @@ export default function TextToSpeechDemo() {
        {/* Demo Video Section */}
 <div className="rounded-2xl overflow-hidden border border-border shadow-2xl bg-black aspect-video">
   <iframe
-    src="https://drive.google.com/file/d/18cafOI_BKdvfV20spuPD3xcOW-BpxB4X/view?usp=sharing"
+    src="https://drive.google.com/file/d/18cafOI_BKdvfV20spuPD3xcOW-BpxB4X/preview"
     className="w-full h-full"
     allow="autoplay"
   />
