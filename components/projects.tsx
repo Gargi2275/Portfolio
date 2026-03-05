@@ -10,108 +10,228 @@ type ProjectCategory = "All" | "Machine Learning" | "Full Stack"
 interface Project {
   title: string
   description: string
-  slug:string,
+  slug: string
   tags: string[]
   category: ProjectCategory
   github: string
   demo?: string
+  screenshots?: string[]   
 }
+// const projects: Project[] = [
+//   {
+//     title: "Flux",
+//       slug: "flux",
+//     description:
+//       "Flux is a Django-based inventory and stock management system designed to manage products, warehouses, and branch-level stock operations. The system supports role-based access control, stock tally tracking, Excel uploads, and exportable reports in PDF and Excel formats. Built using Django REST Framework with support for MySQL databases.",
+//     tags: [
+//   "Python",
+//   "Django",
+//   "Django REST Framework",
+//   "Inventory Management System",
+//   "Stock Management",
+//   "Role-Based Access Control",
+//   "MySQL",
+//   "REST API",
+// ],
+//     category: "Full Stack",
+
+//     github: "https://github.com/Gargi2275/Flux",
+//     demo:"https://drive.google.com/file/d/18cafOI_BKdvfV20spuPD3xcOW-BpxB4X/view?usp=sharing"
+//   },
+//   {
+//     title: "Text To Speech Convertor",
+//     slug:"text-to-speech-convertor",
+//     description:
+//       "A Python-based GUI tool built with Tkinter that converts user-entered text into speech using the pyttsx3 offline TTS engine. The tool supports adjustable speech rate, male/female voice selection, real-time playback, and saving generated audio files locally.",
+//     tags: [
+//   "Python",
+//   "Tkinter",
+//   "pyttsx3",
+//   "Text-to-Speech",
+//   "GUI",
+ 
+// ],
+//     category: "Machine Learning",
+
+//     github: "https://github.com/Gargi2275/Text-to-speech-Convertor",
+//   },
+//   {
+//     title: "Medical Chatbot",
+//     slug:"medical-chatbot",
+//     description:
+//       "A medical chatbot trained on a medical book dataset containing disease names, symptoms, precautions, and treatments. It includes local code to run the bot and vector store to store embeddings (likely for information retrieval).",
+//     tags: [
+//   "AI",
+//   "chatbot",
+//   "NLP",
+//   "medical-AI",
+//   "Python",
+//   "LLM",
+//   "LangChain",
+//   "FAISS",
+//   "vector-database",
+//   "retrieval-augmented-generation",
+//   "machine-learning"
+// ],
+//     category: "Machine Learning",
+
+//     github: "https://github.com/Gargi2275/Medical-chatbot",
+//   },
+//   {
+//     title: "Eye Cursor",
+//     slug:"eye-cursor",
+//     description:"A real-time eye-controlled cursor system built using OpenCV and MediaPipe Face Landmarker. The system tracks iris movement to control mouse cursor position and detects eye blinks to trigger single and double-click actions. It implements movement smoothing, adaptive blink thresholding, and screen coordinate interpolation for stable and precise hands-free computer interaction.",
+//     tags: [ "Python",
+//   "OpenCV",
+//   "MediaPipe",
+//   "Computer Vision",
+//   "Face Landmark Detection",
+//   "Iris Tracking",
+//   "Eye Tracking",
+//   "Blink Detection",
+//  ],
+//     category: "All",
+
+//     github: "https://github.com/Gargi2275/Eye-Cursor",
+//   },
+//   {
+//     title: "Automation and Data Scraping",
+//     slug:"data-scraping",
+//     description:
+//       "A web automation and data scraping system built using Selenium and BeautifulSoup to extract structured business data from Google Local Search results. The script automates browser interaction, navigates through paginated listings, clicks individual business entries, and collects detailed information. Extracted data is stored dynamically into CSV files for further analysis.",
+//     tags: ["Python",
+//   "Selenium",
+//   "BeautifulSoup",
+//   "Web Scraping",
+//   "Browser Automation",
+//   "Google Search Scraper",
+//   "Data Extraction",
+//   "WebDriver Manager",
+//   "Automation Script"],
+//     category: "Machine Learning",
+
+//     github: "https://github.com/Gargi2275/Automation-and-Data-Scraping",
+//   },
+// ]
+
+
+
 const projects: Project[] = [
   {
     title: "Flux",
-      slug: "flux",
+    slug: "flux",
     description:
       "Flux is a Django-based inventory and stock management system designed to manage products, warehouses, and branch-level stock operations. The system supports role-based access control, stock tally tracking, Excel uploads, and exportable reports in PDF and Excel formats. Built using Django REST Framework with support for MySQL databases.",
     tags: [
-  "Python",
-  "Django",
-  "Django REST Framework",
-  "Inventory Management System",
-  "Stock Management",
-  "Role-Based Access Control",
-  "MySQL",
-  "REST API",
-],
+      "Python",
+      "Django",
+      "Django REST Framework",
+      "Inventory Management System",
+      "Stock Management",
+      "Role-Based Access Control",
+      "MySQL",
+      "REST API",
+    ],
     category: "Full Stack",
-
     github: "https://github.com/Gargi2275/Flux",
-    demo:"https://drive.google.com/file/d/18cafOI_BKdvfV20spuPD3xcOW-BpxB4X/view?usp=sharing"
+    demo:
+      "https://drive.google.com/file/d/18cafOI_BKdvfV20spuPD3xcOW-BpxB4X/view?usp=sharing",
   },
+
   {
     title: "Text To Speech Convertor",
-    slug:"text-to-speech-convertor",
+    slug: "text-to-speech-convertor",
     description:
       "A Python-based GUI tool built with Tkinter that converts user-entered text into speech using the pyttsx3 offline TTS engine. The tool supports adjustable speech rate, male/female voice selection, real-time playback, and saving generated audio files locally.",
     tags: [
-  "Python",
-  "Tkinter",
-  "pyttsx3",
-  "Text-to-Speech",
-  "GUI",
- 
-],
+      "Python",
+      "Tkinter",
+      "pyttsx3",
+      "Text-to-Speech",
+      "GUI",
+    ],
     category: "Machine Learning",
+    github:
+      "https://github.com/Gargi2275/Text-to-speech-Convertor",
 
-    github: "https://github.com/Gargi2275/Text-to-speech-Convertor",
+    // 🔴 REPLACE FILE_ID with your actual Drive video ID
+    demo:
+      "https://drive.google.com/file/d/18cafOI_BKdvfV20spuPD3xcOW-BpxB4X/view?usp=sharing",
   },
+
   {
     title: "Medical Chatbot",
-    slug:"medical-chatbot",
+    slug: "medical-chatbot",
     description:
-      "A medical chatbot trained on a medical book dataset containing disease names, symptoms, precautions, and treatments. It includes local code to run the bot and vector store to store embeddings (likely for information retrieval).",
+      "A medical chatbot trained on a medical book dataset containing disease names, symptoms, precautions, and treatments. It includes local code to run the bot and vector store to store embeddings.",
     tags: [
-  "AI",
-  "chatbot",
-  "NLP",
-  "medical-AI",
-  "Python",
-  "LLM",
-  "LangChain",
-  "FAISS",
-  "vector-database",
-  "retrieval-augmented-generation",
-  "machine-learning"
-],
+      "AI",
+      "chatbot",
+      "NLP",
+      "medical-AI",
+      "Python",
+      "LLM",
+      "LangChain",
+      "FAISS",
+      "vector-database",
+      "retrieval-augmented-generation",
+      "machine-learning",
+    ],
     category: "Machine Learning",
-
-    github: "https://github.com/Gargi2275/Medical-chatbot",
+    github:
+      "https://github.com/Gargi2275/Medical-chatbot",
   },
+
   {
     title: "Eye Cursor",
-    slug:"eye-cursor",
-    description:"A real-time eye-controlled cursor system built using OpenCV and MediaPipe Face Landmarker. The system tracks iris movement to control mouse cursor position and detects eye blinks to trigger single and double-click actions. It implements movement smoothing, adaptive blink thresholding, and screen coordinate interpolation for stable and precise hands-free computer interaction.",
-    tags: [ "Python",
-  "OpenCV",
-  "MediaPipe",
-  "Computer Vision",
-  "Face Landmark Detection",
-  "Iris Tracking",
-  "Eye Tracking",
-  "Blink Detection",
- ],
-    category: "All",
+    slug: "eye-cursor",
+    description:
+      "A real-time eye-controlled cursor system built using OpenCV and MediaPipe Face Landmarker. The system tracks iris movement to control mouse cursor position and detects eye blinks to trigger single and double-click actions.",
+    tags: [
+      "Python",
+      "OpenCV",
+      "MediaPipe",
+      "Computer Vision",
+      "Face Landmark Detection",
+      "Iris Tracking",
+      "Eye Tracking",
+      "Blink Detection",
+    ],
+    category: "Machine Learning",
+    github:
+      "https://github.com/Gargi2275/Eye-Cursor",
 
-    github: "https://github.com/Gargi2275/Eye-Cursor",
+    // 🔴 REPLACE FILE_ID
+    demo:
+      "https://drive.google.com/file/d/1jc_k5td8yiyYNDiLu0LuuCAhkDrA75aC/view?usp=sharing",
   },
+
   {
     title: "Automation and Data Scraping",
-    slug:"data-scraping",
+    slug: "data-scraping",
     description:
-      "A web automation and data scraping system built using Selenium and BeautifulSoup to extract structured business data from Google Local Search results. The script automates browser interaction, navigates through paginated listings, clicks individual business entries, and collects detailed information. Extracted data is stored dynamically into CSV files for further analysis.",
-    tags: ["Python",
-  "Selenium",
-  "BeautifulSoup",
-  "Web Scraping",
-  "Browser Automation",
-  "Google Search Scraper",
-  "Data Extraction",
-  "WebDriver Manager",
-  "Automation Script"],
+      "A web automation and data scraping system built using Selenium and BeautifulSoup to extract structured business data from Google Local Search results.",
+    tags: [
+      "Python",
+      "Selenium",
+      "BeautifulSoup",
+      "Web Scraping",
+      "Browser Automation",
+      "Google Search Scraper",
+      "Data Extraction",
+      "WebDriver Manager",
+      "Automation Script",
+    ],
     category: "Machine Learning",
+    github:
+      "https://github.com/Gargi2275/Automation-and-Data-Scraping",
 
-    github: "https://github.com/Gargi2275/Automation-and-Data-Scraping",
+    // 🔴 REPLACE FILE_ID
+    demo:
+      "https://drive.google.com/file/d/1sSrJXQ3NqbOmuebDkWr873Qnzwx3aiQy/view?usp=sharing",
   },
 ]
+
 
 const categories: ProjectCategory[] = [
   "All",
