@@ -288,17 +288,26 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
     Code
   </a>
 
-  {project.demo && (
-    <a
-      href={project.demo.replace("/view?usp=sharing", "/preview")}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-primary transition-colors duration-300"
-    >
-      <ExternalLink className="h-4 w-4" />
-      Demo
-    </a>
-  )}
+  {/* Demo Link */}
+{project.slug ? (
+  <Link
+    href={`/${project.slug}`}
+    className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-primary transition-colors duration-300"
+  >
+    <ExternalLink className="h-4 w-4" />
+    Demo
+  </Link>
+) : project.demo ? (
+  <a
+    href={project.demo.replace("/view?usp=sharing", "/preview")}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-primary transition-colors duration-300"
+  >
+    <ExternalLink className="h-4 w-4" />
+    Demo
+  </a>
+) : null}
 </div>
       </div>
     </div>
