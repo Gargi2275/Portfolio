@@ -336,17 +336,12 @@ export function Hero() {
 
   <span className="hidden sm:block w-px h-4 bg-border" />
 
-  <a
-    href="/video_resume.mp4"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="group inline-flex items-center gap-2
-    text-foreground font-medium
-    transition-all duration-300 hover:text-primary hover:gap-3"
-  >
-    <PlayCircle className="h-4 w-4 transition-transform group-hover:scale-110" />
-    Watch Video Resume
-  </a>
+   <video
+     className="w-full max-w-xl mx-auto rounded-xl shadow-lg"
+     controls
+   >
+     <source src="/video_resume.mp4" type="video/mp4" />
+   </video>
 </div>
         {/* Social Links */}
         <div className="flex items-center justify-center gap-5">
