@@ -37,13 +37,13 @@ export default function AutomationScrapingDemo() {
             Automation Live Demo
           </h2>
 
-          <div className="rounded-2xl overflow-hidden border border-border shadow-2xl bg-black">
-            <video
-              src="/projects/data-scraping/demo.mp4"
-              controls
-              className="w-full"
-            />
-          </div>
+<div className="rounded-2xl overflow-hidden border border-border shadow-2xl bg-black aspect-video">
+  <iframe
+    src="https://drive.google.com/file/d/18cafOI_BKdvfV20spuPD3xcOW-BpxB4X/view?usp=sharing"
+    className="w-full h-full"
+    allow="autoplay"
+  />
+</div>
         </div>
 
         
