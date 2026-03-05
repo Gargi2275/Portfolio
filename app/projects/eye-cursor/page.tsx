@@ -38,11 +38,13 @@ export default function EyeCursorDemo() {
             Project Demo
           </h2>
 
-          <video
-            controls
-            className="w-full rounded-xl border border-border shadow-lg"
-            src="/projects/eye-cursor/demo.mp4"
-          />
+         <div className="rounded-2xl overflow-hidden border border-border shadow-2xl bg-black aspect-video">
+  <iframe
+    src="https://drive.google.com/file/d/18cafOI_BKdvfV20spuPD3xcOW-BpxB4X/view?usp=sharing"
+    className="w-full h-full"
+    allow="autoplay"
+  />
+</div>
 
           <p className="text-sm text-muted-foreground mt-4">
             Demonstration of iris tracking and blink detection controlling the
