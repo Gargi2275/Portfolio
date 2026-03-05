@@ -336,12 +336,13 @@ export function Hero() {
 
   <span className="hidden sm:block w-px h-4 bg-border" />
 
-   <video
-     className="w-full max-w-xl mx-auto rounded-xl shadow-lg"
-     controls
+   <a
+     href="/video_resume.mp4"
+     target="_blank"
+     rel="noopener noreferrer"
    >
-     <source src="/video_resume.mp4" type="video/mp4" />
-   </video>
+     Watch Video Resume
+   </a>
 </div>
         {/* Social Links */}
         <div className="flex items-center justify-center gap-5">
