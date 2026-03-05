@@ -157,34 +157,29 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
         </div>
 
         {/* Links */}
-        <div className="flex items-center gap-4 pt-4 border-t border-border/50">
-          <a
-  href={project.github}
-  target="_blank"
-  rel="noopener noreferrer"
-  className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-primary transition-colors duration-300"
->
-  <Github className="h-4 w-4" />
-  Code
-</a>
-
-{project.demo && (
+<div className="flex items-center gap-4 pt-4 border-t border-border/50">
   <a
-    href={project.demo}
+    href={project.github}
     target="_blank"
     rel="noopener noreferrer"
     className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-primary transition-colors duration-300"
   >
-    <ExternalLink className="h-4 w-4" />
-    Demo
+    <Github className="h-4 w-4" />
+    Code
   </a>
-)}
-  className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-primary transition-colors duration-300"
->
-  <ExternalLink className="h-4 w-4" />
-  Demo
-</Link>
-        </div>
+
+  {project.demo && (
+    <a
+      href={project.demo.replace("/view?usp=sharing", "/preview")}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-primary transition-colors duration-300"
+    >
+      <ExternalLink className="h-4 w-4" />
+      Demo
+    </a>
+  )}
+</div>
       </div>
     </div>
   )
