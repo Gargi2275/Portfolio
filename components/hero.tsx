@@ -143,7 +143,7 @@ export function Hero() {
 {/* Resume Section */}
 <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-12 text-sm">
   <a
-    href="/Gargi_Vanjara_Resume.pdf"
+    href="/Gargi_updated_resume.pdf"
     download
     className="group inline-flex items-center gap-2
     text-foreground font-medium
